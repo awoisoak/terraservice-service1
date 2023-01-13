@@ -12,3 +12,9 @@ variable "gcp_credentials" {
   sensitive   = true
   description = "Google Cloud service account credentials"
 }
+
+variable "tfe_token" {
+  type        = string
+  sensitive   = true
+  description = "Token to be used by TFE provider"
+}
