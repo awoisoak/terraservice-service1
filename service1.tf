@@ -19,10 +19,3 @@ resource "google_compute_subnetwork" "osaka_public_subnet_1" {
   region        = var.region
   network       = data.tfe_outputs.core.values.osaka_vpc.id
 }
-
-resource "google_compute_subnetwork" "osaka_public_subnet_3" {
-  name          = "osaka-public-subnet-3"
-  ip_cidr_range = "10.0.3.0/24"
-  region        = var.region
-  network       = data.tfe_outputs.core.values.osaka_vpc.id
-}
