@@ -7,7 +7,7 @@ data "tfe_outputs" "core-network" {
 }
 
 module "foo" {
-  source          = "../../modules/main"
+  source          = "../../modules/foo"
   region          = var.region
   subnetwork_name = var.subnetwork_name
   cidr            = var.cidr
