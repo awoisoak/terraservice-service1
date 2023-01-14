@@ -2,7 +2,7 @@
 # from which state a specific output is coming
 data "tfe_outputs" "core" {
   organization = "awoisoak-devops"
-  workspace = "terraservice-core"
+  workspace    = "terraservice-core"
 }
 
 

@@ -3,7 +3,7 @@ terraform {
     hostname     = "app.terraform.io"
     organization = "awoisoak-devops"
     workspaces {
-      name = "terraservice-service1"
+      name = "terraservice-service1-development"
     }
   }
 
