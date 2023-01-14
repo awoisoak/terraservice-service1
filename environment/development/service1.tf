@@ -13,3 +13,11 @@ module "foo" {
   cidr            = var.cidr
   network_id      = data.tfe_outputs.core-network.values.vpc.id
 }
+
+module "foo" {
+  source          = "../../modules/foo"
+  region          = var.region
+  subnetwork_name = "hokkaido-subnet"
+  cidr            = "10.0.2.0/24"
+  network_id      = data.tfe_outputs.core-network.values.vpc.id
+}
