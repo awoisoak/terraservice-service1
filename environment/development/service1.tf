@@ -14,6 +14,7 @@ module "foo" {
   network_id      = data.tfe_outputs.core-network.values.vpc.id
 }
 
+# Example of creating a second subnet by calling the module twice
 module "foo2" {
   source          = "../../modules/foo"
   region          = var.region
