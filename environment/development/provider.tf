@@ -3,7 +3,7 @@ terraform {
     hostname     = "app.terraform.io"
     organization = "awoisoak-devops"
     workspaces {
-      name = "terraservice-service1"
+      name = "terraservice-service1-development"
     }
   }
 
@@ -13,7 +13,7 @@ terraform {
       version = "4.45.0"
     }
     tfe = {
-      source = "hashicorp/tfe"
+      source  = "hashicorp/tfe"
       version = "0.41.0"
     }
   }

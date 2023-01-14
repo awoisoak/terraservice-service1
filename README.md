@@ -3,3 +3,6 @@ Service1 terraform module to test a [Multirepo](https://www.hashicorp.com/blog/t
 
 
 Related repo https://github.com/awoisoak/terraservice-core
+
+
+This repository doesn't follow the Core repo approach of have its own split states per module (other than the environment based) just for the sake of simplicity.
