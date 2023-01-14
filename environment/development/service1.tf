@@ -14,7 +14,7 @@ module "foo" {
   network_id      = data.tfe_outputs.core-network.values.vpc.id
 }
 
-module "foo" {
+module "foo2" {
   source          = "../../modules/foo"
   region          = var.region
   subnetwork_name = "hokkaido-subnet"
