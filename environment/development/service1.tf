@@ -14,11 +14,11 @@ module "foo" {
   network_id      = data.tfe_outputs.core-network.values.vpc.id
 }
 
-# Example of creating a second subnet by calling the module twice
+# Example of creating a second subnet by calling the module twice and using a different vpc exported by core-network
 module "foo2" {
   source          = "../../modules/foo"
   region          = var.region
   subnetwork_name = "hokkaido-subnet"
   cidr            = "10.0.2.0/24"
-  network_id      = data.tfe_outputs.core-network.values.vpc.id
+  network_id      = data.tfe_outputs.core-network.values.vpc2.id
 }
